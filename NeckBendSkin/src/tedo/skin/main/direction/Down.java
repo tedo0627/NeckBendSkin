@@ -15,13 +15,13 @@ public class Down {
 
 		BufferedImage out = new BufferedImage(8, 8, image.getType());
 		AffineTransform at = new AffineTransform();
-		at.setToRotation(Math.toRadians(-90), 4, 4);
+		at.setToRotation(Math.toRadians(-270), 4, 4);
 		at.translate(0, 0);
 		out.createGraphics().drawImage(portion, at, null);
 
 		for (int y = 0; y < 8; y++) {
 			for (int x = 0; x < 8; x++) {
-				write.setRGB(x + 16, y, out.getRGB(x, y));
+				write.setRGB(x + 16, y, out.getRGB(7 - x, y));
 			}
 		}
 	}
@@ -36,13 +36,13 @@ public class Down {
 
 		BufferedImage out = new BufferedImage(8, 8, image.getType());
 		AffineTransform at = new AffineTransform();
-		at.setToRotation(Math.toRadians(-90), 4, 4);
+		at.setToRotation(Math.toRadians(-270), 4, 4);
 		at.translate(0, 0);
 		out.createGraphics().drawImage(portion, at, null);
 
 		for (int y = 0; y < 8; y++) {
 			for (int x = 0; x < 8; x++) {
-				write.setRGB(x + 48, y, out.getRGB(x, y));
+				write.setRGB(x + 48, y, out.getRGB(7 - x, y));
 			}
 		}
 	}

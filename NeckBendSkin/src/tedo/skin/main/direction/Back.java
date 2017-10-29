@@ -15,7 +15,7 @@ public class Back {
 
 		BufferedImage out = new BufferedImage(8, 8, image.getType());
 		AffineTransform at = new AffineTransform();
-		at.setToRotation(Math.toRadians(-90), 4, 4);
+		at.setToRotation(Math.toRadians(-270), 4, 4);
 		at.translate(0, 0);
 		out.createGraphics().drawImage(portion, at, null);
 
@@ -36,7 +36,7 @@ public class Back {
 
 		BufferedImage out = new BufferedImage(8, 8, image.getType());
 		AffineTransform at = new AffineTransform();
-		at.setToRotation(Math.toRadians(-90), 4, 4);
+		at.setToRotation(Math.toRadians(-270), 4, 4);
 		at.translate(0, 0);
 		out.createGraphics().drawImage(portion, at, null);
 
